@@ -1,7 +1,11 @@
 import React from 'react'
+import { ScrollArea } from "@/components/ui/scroll-area"
+
 
 const BlackCategory = () => {
   return (
+
+    <ScrollArea className="h-[350px] rounded-md border p-3">
     <div className='flex flex-col gap-2  ' >
       {
         [...Array(7)].map((item, index) => (
@@ -10,6 +14,8 @@ const BlackCategory = () => {
         ))
       }
     </div>
+    </ScrollArea>
+    
   )
 }
 

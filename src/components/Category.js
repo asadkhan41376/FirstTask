@@ -1,5 +1,7 @@
 
 import React from 'react'
+import { ScrollArea } from "@/components/ui/scroll-area"
+
 
 const Category = () => {
 
@@ -15,8 +17,8 @@ const Category = () => {
   ]
   return (
 
-
-    <div className='flex flex-col gap-2 p-2 ' >
+<ScrollArea className="h-[300px] rounded-md border p-4">
+<div className='flex flex-col gap-2 p-2 ' >
       {
         CategoryItem.map((item, index) => (
           <h1 key={index} className='text-md rounded-lg  font-bold text-center border border-black backdrop-blur-md p-2' >{item.cName}</h1>
@@ -24,6 +26,8 @@ const Category = () => {
         ))
       }
     </div>
+</ScrollArea>
+   
   )
 }
 

@@ -3,7 +3,7 @@ import React from 'react'
 const Total = () => {
   return (
 
-    <div className=' flex justify-between  py-2   text-center text-white items-center'>
+    <div className=' flex justify-between  py-2   text-center text-white items-center pl-3'>
       <div className="">
         <h1 className='text-md rounded-lg  font-bold text-center border w-[200px] border-black  bg-red-800   p-2'>Day Total</h1>
       </div>
