@@ -1,4 +1,4 @@
-import BlackCategory from '@/components/BlackCategory'
+
 import Category from '@/components/Category'
 import FooterBar from '@/components/FooterBar'
 import Table from '@/components/Table'
@@ -10,21 +10,24 @@ const LayoutPage = () => {
   return (
 
     <>
-     <div className='  rounded-lg border border-#FACC15-500  p-5   ' style={{ backdropFilter: "blur(5px)" }}>
-      <div className="flex justify-between   items-center">
-        <BlackCategory  className="flex-1"/>
-        <div>
-          <Weeks />
-          <Table />
+      <div className='  rounded-lg border border-#FACC15-500  p-5 ' style={{ backdropFilter: "blur(10px)" }}>
+        <div >
+          <div className='flex items-center justify-between gap-6 p-2'>
+            <div >
+              <Weeks />
+              <div className="">
+                <Table />
+                <Total />
+              </div>
+            </div>
+          </div>
         </div>
+      
       </div>
-      <Total />
-      <FooterBar />
-    </div>
-    
-    
+
+
     </>
- 
+
 
   )
 }

@@ -12,12 +12,13 @@ const Weeks = () => {
     {day:"S"},
   ]
   return (
+    
   
-      <div className=' flex items-center  justify-between gap-4  text-center text-white'>
+      <div className=' px-2 flex items-center justify-end gap-5 text-center text-white '>
 
       {
         WeeksDay.map((day,index)=>(
-          <div key={index} className=' w-[42px]  rounded-lg  bg-red-800   border border-black '>{day.day}</div>
+          <div key={index} className='w-[30px] h-[30px] rounded-lg  bg-red-800   border border-black '>{day.day}</div>
         ))
       }
       
