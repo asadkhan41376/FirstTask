@@ -17,7 +17,7 @@ const page = () => {
             <label htmlFor="Name" className='text-white text-lg mr-2'>
               Name
             </label>
-            <Input type="text" id="Name" placeholder="Asad" className=" bg-transparent placeholder:text-black placeholder:text-lg  rounded-none" />
+            <Input type="text" id="Name" placeholder="Asad" className=" bg-transparent border-none placeholder:text-black placeholder:text-lg  rounded-none" />
             <div className=' rounded text-sm p-3 absolute right-0'>
 
               <GrEdit />
@@ -33,7 +33,7 @@ const page = () => {
           <label htmlFor="date" className='text-white text-lg mr-2'>
             Date
           </label>
-          <Input type="date" id="Date" placeholder="2-10-2024" className=" bg-transparent placeholder:text-black placeholder:text-lg  rounded-none" />
+          <Input type="date" id="Date" placeholder="2-10-2024" className=" bg-transparent border-none placeholder:text-black placeholder:text-lg  rounded-none" />
 
 
         </div>
