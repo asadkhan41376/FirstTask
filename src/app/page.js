@@ -34,7 +34,7 @@ const page = () => {
             Date
           </label>
           <Input type="date" id="Date" placeholder="2-10-2024" className=" bg-transparent placeholder:text-black placeholder:text-lg  rounded-none" />
-          
+
 
         </div>
 

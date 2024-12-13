@@ -17,17 +17,17 @@ const Category = () => {
   ]
   return (
 
-<ScrollArea className="h-[500px] rounded-md border p-4 backdrop-blur-2xl">
-<div className='flex flex-col gap-2 p-2 ' >
-      {
-        CategoryItem.map((item, index) => (
-          <h1 key={index} className='text-md rounded-lg  font-bold text-center border border-black backdrop-blur-md p-2' >{item.cName}</h1>
+    <ScrollArea className="h-[500px] rounded-md border p-4 backdrop-blur-2xl">
+      <div className='flex flex-col gap-2 p-2 ' >
+        {
+          CategoryItem.map((item, index) => (
+            <h1 key={index} className='text-md rounded-lg  font-bold text-center border border-black backdrop-blur-md p-2' >{item.cName}</h1>
 
-        ))
-      }
-    </div>
-</ScrollArea>
-   
+          ))
+        }
+      </div>
+    </ScrollArea>
+
   )
 }
 

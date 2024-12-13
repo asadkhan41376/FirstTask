@@ -10,7 +10,7 @@ const LayoutPage = () => {
   return (
 
     < >
-      <div className='  rounded-lg border border-#FACC15-500 ' style={{ backdropFilter: "blur(10px)"}}>
+      <div className='  rounded-lg border border-#FACC15-500 ' style={{ backdropFilter: "blur(10px)" }}>
         <div >
           <div className='flex items-center justify-center gap-6 p-2'>
             <div >
@@ -22,7 +22,7 @@ const LayoutPage = () => {
             </div>
           </div>
         </div>
-      <FooterBar/>
+        <FooterBar />
       </div>
 
 
