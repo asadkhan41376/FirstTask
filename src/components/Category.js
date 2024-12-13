@@ -17,7 +17,7 @@ const Category = () => {
   ]
   return (
 
-<ScrollArea className="h-[300px] rounded-md border p-4">
+<ScrollArea className="h-[500px] rounded-md border p-4 backdrop-blur-2xl">
 <div className='flex flex-col gap-2 p-2 ' >
       {
         CategoryItem.map((item, index) => (

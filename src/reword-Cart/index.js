@@ -9,20 +9,20 @@ import React from 'react'
 const LayoutPage = () => {
   return (
 
-    <>
-      <div className='  rounded-lg border border-#FACC15-500  p-5 ' style={{ backdropFilter: "blur(10px)" }}>
+    < >
+      <div className='  rounded-lg border border-#FACC15-500 ' style={{ backdropFilter: "blur(10px)"}}>
         <div >
-          <div className='flex items-center justify-between gap-6 p-2'>
+          <div className='flex items-center justify-center gap-6 p-2'>
             <div >
               <Weeks />
-              <div className="">
+              <div>
                 <Table />
                 <Total />
               </div>
             </div>
           </div>
         </div>
-      
+      <FooterBar/>
       </div>
 
 

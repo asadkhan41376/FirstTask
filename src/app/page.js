@@ -1,16 +1,43 @@
 import React from 'react'
 import LayoutPage from '../reword-Cart'
 import Category from '@/components/Category'
+import { GrEdit } from 'react-icons/gr'
+import { Input } from '@/components/ui/input'
 
 
 const page = () => {
   return (
     <div className='h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  '>
-      <h1 className='text-3xl  rounded-md mb-3 text-white'>Reward Chart</h1>
       {/* ========================= */}
-      <div className="flex justify-between w-[500px]">
-        <h2 className='text-xl  rounded-md mb-3 text-white'>Name: <span>asad</span></h2>
-        <h2 className='text-xl  rounded-md mb-3 text-white'>{`${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()}`}</h2>
+      <div className="flex justify-between items-center w-[800px] py-3">
+        <div className=' text-white  px-2 rounded-lg'>
+
+          {/* name input =================== */}
+          <div className="flex w-full  items-center relative gap-1 text-black ">
+            <label htmlFor="Name" className='text-white text-lg mr-2'>
+              Name
+            </label>
+            <Input type="text" id="Name" placeholder="Asad" className=" bg-transparent placeholder:text-black placeholder:text-lg  rounded-none" />
+            <div className=' rounded text-sm p-3 absolute right-0'>
+
+              <GrEdit />
+            </div>
+
+          </div>
+        </div>
+
+
+        <h1 className='text-3xl  rounded-md mb-3 text-white'>Reward Chart</h1>
+        {/* Date input ================== */}
+        <div className="flex items-center relative ">
+          <label htmlFor="date" className='text-white text-lg mr-2'>
+            Date
+          </label>
+          <Input type="date" id="Date" placeholder="2-10-2024" className=" bg-transparent placeholder:text-black placeholder:text-lg  rounded-none" />
+          
+
+        </div>
+
 
       </div>
       {/* ======================= */}
