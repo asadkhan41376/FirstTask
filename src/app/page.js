@@ -9,7 +9,7 @@ const page = () => {
   return (
     <div className='h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  '>
       {/* ========================= */}
-      <div className="flex justify-between items-center w-[800px] py-3">
+      <div className="flex justify-between items-center w-[70%] py-3">
         <div className=' text-white  px-2 rounded-lg'>
 
           {/* name input =================== */}
