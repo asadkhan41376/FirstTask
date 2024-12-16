@@ -17,12 +17,12 @@ const Table = () => {
 
             <div className=" flex gap-5">
 
-              <Checkbox className="w-[30px] h-[30px] " />
-              <Checkbox className="w-[30px] h-[30px] " />
-              <Checkbox className="w-[30px] h-[30px] " />
-              <Checkbox className="w-[30px] h-[30px] " />
-              <Checkbox className="w-[30px] h-[30px] " />
-              <Checkbox className="w-[30px] h-[30px] " />
+              <Checkbox className="w-[35px] h-[30px] " />
+              <Checkbox className="w-[35px] h-[30px] " />
+              <Checkbox className="w-[35px] h-[30px] " />
+              <Checkbox className="w-[35px] h-[30px] " />
+              <Checkbox className="w-[35px] h-[30px] " />
+              <Checkbox className="w-[35px] h-[30px] " />
             </div>
 
 

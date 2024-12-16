@@ -29,7 +29,7 @@ const Category = () => {
       <div className='flex flex-col gap-2 p-2 ' >
         {
           CategoryItem.map((item, index) => (
-            <h1 key={index} onDragStart={(event) => onDragStart(event, "heading")} draggable className='text-md rounded-lg  font-bold text-center border border-black backdrop-blur-md p-2' >{item.cName}</h1>
+            <h1 key={index} onDragStart={(event) => onDragStart(event, "heading")} draggable className='text-md rounded-lg  font-bold text-center border border-black backdrop-blur-md p-1' >{item.cName}</h1>
 
           ))
         }

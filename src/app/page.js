@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className='h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  '>
       {/* ========================= */}
-      <div className="flex justify-between items-center w-[70%] py-3">
+      <div className="flex justify-between items-center w-[62%] py-3">
         <div className=' text-white  px-2 rounded-lg'>
 
           {/* name input =================== */}
@@ -18,8 +18,8 @@ const page = () => {
             <label htmlFor="Name" className='text-white text-lg mr-2'>
               Name
             </label>
-            <Input type="text" id="Name" placeholder="Asad" className=" bg-transparent border-none placeholder:text-black placeholder:text-lg  rounded-none" />
-            <div className=' rounded text-sm p-3 absolute right-0'>
+            <Input type="text" id="Name" placeholder="Asad" className=" bg-transparent   placeholder:text-black placeholder:text-lg   border-white rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-gray-300 relative z-10" />
+            <div className=' rounded text-sm p-3 absolute right-0 '>
 
               <GrEdit />
             </div>
@@ -27,14 +27,14 @@ const page = () => {
           </div>
         </div>
 
-
         <h1 className='text-3xl  rounded-md mb-3 text-white'>Reward Chart</h1>
+       
         {/* Date input ================== */}
         <div className="flex items-center relative ">
           <label htmlFor="date" className='text-white text-lg mr-2'>
             Date
           </label>
-          <Input type="date" id="Date" placeholder="2-10-2024" className=" bg-transparent border-none placeholder:text-black placeholder:text-lg  rounded-none" />
+          <Input type="date" id="Date" placeholder="2-10-2024" className=" bg-transparent   placeholder:text-black placeholder:text-lg   border-white rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-gray-300 relative z-10" />
 
 
         </div>
@@ -44,9 +44,9 @@ const page = () => {
       {/* ======================= */}
       <div className='flex gap-2'>
         <DnDProvider>
+
         <Category />
         <LayoutPage />
-
         </DnDProvider>
       </div>
 

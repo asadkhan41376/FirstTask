@@ -18,7 +18,7 @@ const Weeks = () => {
 
       {
         WeeksDay.map((day, index) => (
-          <div key={index} className='w-[30px] h-[30px] rounded-lg  bg-red-800   border border-black '>{day.day}</div>
+          <div key={index} className='w-[35px] h-[30px] rounded-lg  bg-red-800   border border-black '>{day.day}</div>
         ))
       }
 
