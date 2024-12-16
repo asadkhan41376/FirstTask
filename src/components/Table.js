@@ -10,9 +10,9 @@ const Table = () => {
 
       {
         [...Array(7)].map((_, index) => (
-          <div className='flex items-center justify-between gap-8 p-2'>
-            <div>
-              <h1 key={index} className='text-md rounded-lg  font-bold text-center border w-[200px] h-[35px] border-black  bg-[#FCC737] ' ></h1>
+          <div  key={index}  className='flex items-center justify-between gap-8 p-2'>
+            <div >
+              <h1 className='text-md rounded-lg  font-bold text-center border w-[200px] h-[35px] border-black  bg-[#FCC737] ' ></h1>
             </div>
 
             <div className=" flex gap-5">
