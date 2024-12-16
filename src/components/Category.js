@@ -6,7 +6,7 @@ import { useContext } from "react"
 
 const Category = () => {
 
-  const [setType] =useContext(DnDContext)
+  const [_,setType] =useContext(DnDContext);
 
 
   const CategoryItem = [
