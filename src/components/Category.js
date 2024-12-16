@@ -1,9 +1,12 @@
-
-import React from 'react'
+"use client"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import DnDContext, { DndContext, useDnD, useDnd } from '@/context/DndContext'
+import { useContext } from "react"
 
 
 const Category = () => {
+
+  const [setType] =useContext(DnDContext)
 
 
   const CategoryItem = [
@@ -15,13 +18,18 @@ const Category = () => {
     { cName: "Go To bed On Time " },
     { cName: "Good Night Kisses " },
   ]
+  const onDragStart = (event, nodeType) => {
+    setType(nodeType);
+    event.dataTransfer.setData("text/plain", JSON.stringify({ label: nodeType }));
+    event.dataTransfer.effectAllowed = 'move';
+  };
   return (
 
     <ScrollArea className="h-[500px] rounded-md border p-4 backdrop-blur-2xl">
       <div className='flex flex-col gap-2 p-2 ' >
         {
           CategoryItem.map((item, index) => (
-            <h1 key={index} className='text-md rounded-lg  font-bold text-center border border-black backdrop-blur-md p-2' >{item.cName}</h1>
+            <h1 key={index} onDragStart={(event) => onDragStart(event, "heading")} draggable className='text-md rounded-lg  font-bold text-center border border-black backdrop-blur-md p-2' >{item.cName}</h1>
 
           ))
         }

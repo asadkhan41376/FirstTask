@@ -3,6 +3,7 @@ import LayoutPage from '../reword-Cart'
 import Category from '@/components/Category'
 import { GrEdit } from 'react-icons/gr'
 import { Input } from '@/components/ui/input'
+import { DnDProvider } from '@/context/DndContext'
 
 
 const page = () => {
@@ -42,8 +43,11 @@ const page = () => {
       </div>
       {/* ======================= */}
       <div className='flex gap-2'>
+        <DnDProvider>
         <Category />
         <LayoutPage />
+
+        </DnDProvider>
       </div>
 
     </div>
