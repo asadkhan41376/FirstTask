@@ -19,7 +19,7 @@ const page = () => {
             <label htmlFor="Name" className='text-white text-lg mr-2'>
               Name
             </label>
-            <Input type="text" id="Name" placeholder="Asad" className=" bg-transparent   placeholder:text-black placeholder:text-lg   border-white rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-gray-300 relative z-10" />
+            <Input type="text" id="Name" placeholder="Your Name" className=" bg-transparent   placeholder:text-black placeholder:text-lg   border-white rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-gray-300 relative z-10" />
             <div className=' rounded text-sm p-3 absolute right-0 '>
 
               <GrEdit />
