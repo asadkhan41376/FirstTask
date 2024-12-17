@@ -8,9 +8,10 @@ import { DnDProvider } from '@/context/DndContext'
 
 const page = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  '>
+    <div className='h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  overflow-y-scroll '>
+      <div className='pt-[50px]'>  <h1 className='text-3xl  rounded-md text-white'>Reward Chart</h1></div>
       {/* ========================= */}
-      <div className="flex justify-between items-center w-[62%] py-3">
+      <div className="flex justify-between items-center w-[60%] py-3">
         <div className=' text-white  px-2 rounded-lg'>
 
           {/* name input =================== */}
@@ -27,8 +28,8 @@ const page = () => {
           </div>
         </div>
 
-        <h1 className='text-3xl  rounded-md mb-3 text-white'>Reward Chart</h1>
-       
+
+
         {/* Date input ================== */}
         <div className="flex items-center relative ">
           <label htmlFor="date" className='text-white text-lg mr-2'>
@@ -45,8 +46,8 @@ const page = () => {
       <div className='flex gap-2'>
         <DnDProvider>
 
-        <Category />
-        <LayoutPage />
+          <Category />
+          <LayoutPage />
         </DnDProvider>
       </div>
 
