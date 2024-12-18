@@ -38,7 +38,7 @@ const Total = () => {
 {/* // grand Total  ======= */}
 
 <div className="Grand_Total flex justify-between items-center w-full">
-<div className=" w-[74%]">
+<div className=" w-[72%]">
         <h1 className=' text-white text-md rounded-lg  font-bold text-center border  border-black  bg-red-800   p-2'>Grand Total</h1>
       </div>
 
