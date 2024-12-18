@@ -15,7 +15,7 @@ const Weeks = () => {
   return (
 
 
-    <div className=' px-2 flex items-center justify-end gap-5 text-center text-white '>
+    <div className=' px-2 flex items-center justify-end gap-5 text-center text-white pt-2'>
 
       {
         WeeksDay.map((day, index) => (
