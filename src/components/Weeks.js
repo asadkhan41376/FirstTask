@@ -4,6 +4,7 @@ const Weeks = () => {
 
 
   const WeeksDay = [
+    { day: "S" },
     { day: "M" },
     { day: "T" },
     { day: "W" },

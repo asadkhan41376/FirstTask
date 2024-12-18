@@ -4,14 +4,18 @@ import Category from '@/components/Category'
 import { GrEdit } from 'react-icons/gr'
 import { Input } from '@/components/ui/input'
 import { DnDProvider } from '@/context/DndContext'
+import { ReactFlowProvider } from '@xyflow/react'
 
 
 const page = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  overflow-y-scroll '>
-      <div className='pt-[50px]'>  <h1 className='text-3xl  rounded-md text-white'>Reward Chart</h1></div>
+    <div className='h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  overflow-y-scroll relative'>
+     {/* <div className="absolute w-full top-0 left-0 bg-[#01010178] z-[0] " ></div> */}
+      <div className='pt-[80px]'> 
+         <h1 className='text-3xl  rounded-md text-white'>Reward Chart</h1>
+      </div>
       {/* ========================= */}
-      <div className="flex justify-between items-center w-[60%] py-3">
+      <div className="flex justify-between items-center w-[60%] py-3 ">
         <div className=' text-white  px-2 rounded-lg'>
 
           {/* name input =================== */}
@@ -44,11 +48,14 @@ const page = () => {
       </div>
       {/* ======================= */}
       <div className='flex gap-2'>
-        <DnDProvider>
 
+        <ReactFlowProvider>
+        <DnDProvider>
           <Category />
           <LayoutPage />
         </DnDProvider>
+        </ReactFlowProvider>
+        
       </div>
 
     </div>
