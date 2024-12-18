@@ -48,7 +48,7 @@ const Category = () => {
   return (
 <div className=" rounded-md border p-4 backdrop-blur-2xl">
 
-<h1  draggable className={`text-md rounded-lg mb-2  font-bold text-center border bg-white text-black border-black backdrop-blur-md p-2 ` }>Master task list</h1>
+<h1   className={`text-md rounded-lg mb-2  font-bold text-center border bg-white text-black border-black backdrop-blur-md p-2 ` }>Master task list</h1>
 
     <ScrollArea className=" h-[400px] rounded-md border p-2 backdrop-blur-2xl">
       <div className='flex flex-col gap-2 p-2 ' >
