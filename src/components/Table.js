@@ -5,11 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 const Table = () => {
 
 const Box = useRef(null)
-const handleImag =()=>{
-  
-  
-  
-}
+
 
   return (
     < >
@@ -23,7 +19,7 @@ const handleImag =()=>{
             </div>
 
             <div className=" flex gap-5" >
-              <Checkbox className="w-[35px] h-[30px] " ref={Box} onClick={handleImag} />
+              <Checkbox className="w-[35px] h-[30px] "  />
               <Checkbox className="w-[35px] h-[30px] " />
               <Checkbox className="w-[35px] h-[30px] " />
               <Checkbox className="w-[35px] h-[30px] " />
