@@ -9,13 +9,13 @@ import { ReactFlowProvider } from '@xyflow/react'
 
 const page = () => {
   return (
-    <div className=' flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover  relative pb-6'>
+    <div className=' min-h-screen flex flex-col justify-center items-center  bg-[url("/myImg/construction.jpg")] bg-no-repeat bg-cover   relative pb-6'>
      <div className="absolute w-full h-[100%] top-0 left-0 bg-[#01010165] z-[0] " ></div>
       <div className='pt-[10px] z-10'> 
          <h1 className='text-3xl  rounded-md text-[#FCC737] '>Reward Chart</h1>
       </div>
       {/* ========================= */}
-      <div className="flex justify-between items-center w-[68%] py-3 ">
+      <div className="flex justify-between items-center   max-w-[940px]   w-[100%] py-3 ">
         <div className=' text-white  px-2 rounded-lg'>
 
           {/* name input =================== */}
